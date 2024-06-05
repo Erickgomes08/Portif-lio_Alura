@@ -100,11 +100,11 @@ body{
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 50%;
+    width: 75%;
     text-align: center;
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0 ;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -126,7 +126,7 @@ body{
 }
 
 .apresentacao__imagem{
-    width: 50%;
+    width: 65%;
 }
 
 .rodape{
@@ -135,6 +135,25 @@ body{
     padding: 24px;
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width:1228px ) {
+    .cabecalho{
+     padding: 10%;   
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto ;
+    }
 }
